@@ -1,15 +1,14 @@
 import boto3
 from botocore.exceptions import ClientError
 
-BUCKET_NAME = "TestBucket"          # must be globally unique — change suffix if needed
+BUCKET_NAME = "testbucket-lia-hw2"
 TABLE_NAME  = "S3-object-size-history"
-REGION      = "us-east-1"           # change to your region
+REGION      = "us-west-1"
 
 s3  = boto3.client("s3",  region_name=REGION)
 ddb = boto3.client("dynamodb", region_name=REGION)
 
 
-# ── 1. Create S3 bucket ───────────────────────────────────────────────────────
 def create_bucket():
     try:
         if REGION == "us-east-1":
@@ -28,14 +27,13 @@ def create_bucket():
             raise
 
 
-# ── 2. Create DynamoDB table ──────────────────────────────────────────────────
 def create_table():
     try:
         ddb.create_table(
             TableName=TABLE_NAME,
             KeySchema=[
-                {"AttributeName": "bucketName", "KeyType": "HASH"},   # partition key
-                {"AttributeName": "timeStamp",  "KeyType": "RANGE"},  # sort key
+                {"AttributeName": "bucketName", "KeyType": "HASH"},
+                {"AttributeName": "timeStamp",  "KeyType": "RANGE"},
             ],
             AttributeDefinitions=[
                 {"AttributeName": "bucketName", "AttributeType": "S"},
