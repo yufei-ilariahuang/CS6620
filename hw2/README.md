@@ -1,4 +1,6 @@
 
+
+
 usage: plots S3 bucket size change
 
 3 lambdas:
@@ -44,7 +46,7 @@ Part4:
 
 
 Demo:
-1. python create.p
+1. python create.py
 
 2. size-tracking lambda
 (1) Create the function:
@@ -92,4 +94,23 @@ Configuration → Function URL → Create function URL
 Auth type: NONE
 Copy the URL — you'll need it for the driver lambda in Part 4
 
-4.
+4. driver lambda
+
+(1) Create the function:
+
+Lambda → Create function → Author from scratch
+Name: driver, Runtime: Python 3.12, Architecture: x86_64
+Paste code → replace PLOTTING_URL with your plotting lambda's Function URL → Deploy
+
+(2) Add permissions:
+
+Configuration → Permissions → click role → attach AmazonS3FullAccess
+
+(3) Increase timeout (it sleeps 12+ seconds total):
+
+Configuration → General configuration → Edit → set timeout to 60 seconds
+
+(4) test it:
+
+Test → create new test event with {} → Invoke
+
