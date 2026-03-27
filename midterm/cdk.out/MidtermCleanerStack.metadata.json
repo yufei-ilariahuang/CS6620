@@ -1,0 +1,50 @@
+{
+  "/MidtermCleanerStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/MidtermCleanerStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/MidtermCleanerStack/CleanerFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunction67FA5C5F"
+    }
+  ],
+  "/MidtermCleanerStack/CleanerScheduleRule/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerScheduleRule1AF1C964"
+    }
+  ],
+  "/MidtermCleanerStack/CleanerScheduleRule/AllowEventRuleMidtermCleanerStackCleanerFunctionB8A00E0F": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerScheduleRuleAllowEventRuleMidtermCleanerStackCleanerFunctionB8A00E0FA53EB122"
+    }
+  ],
+  "/MidtermCleanerStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/MidtermCleanerStack/CleanerFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunctionServiceRole0677512D"
+    }
+  ],
+  "/MidtermCleanerStack/CleanerFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunctionServiceRoleDefaultPolicy8210BC79"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+ "Resources": {
+  "SizeHistoryTableBD8CEEAE": {
+   "Type": "AWS::DynamoDB::Table",
+   "Properties": {
+    "AttributeDefinitions": [
+     {
+      "AttributeName": "bucketName",
+      "AttributeType": "S"
+     },
+     {
+      "AttributeName": "timeStamp",
+      "AttributeType": "S"
+     }
+    ],
+    "BillingMode": "PAY_PER_REQUEST",
+    "GlobalSecondaryIndexes": [
+     {
+      "IndexName": "timeStamp-index",
+      "KeySchema": [
+       {
+        "AttributeName": "timeStamp",
+        "KeyType": "HASH"
+       }
+      ],
+      "Projection": {
+       "ProjectionType": "ALL"
+      }
+     }
+    ],
+    "KeySchema": [
+     {
+      "AttributeName": "bucketName",
+      "KeyType": "HASH"
+     },
+     {
+      "AttributeName": "timeStamp",
+      "KeyType": "RANGE"
+     }
+    ]
+   },
+   "UpdateReplacePolicy": "Delete",
+   "DeletionPolicy": "Delete",
+   "Metadata": {
+    "aws:cdk:path": "StorageStack/SizeHistoryTable/Resource"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/yXISw5AMBRA0bWYtw9lBxZAMJfXj6hPK/oaEbF3CaN7cgWIsoQswTNwpRe+Wgl3R6gWhmcY9OVw81rC3aNcDatG9+FhrQk+HupbdaQ90sOaiybv0gJyASKZg7X8iI7sZqD9+wKJNTOZbwAAAA=="
+   },
+   "Metadata": {
+    "aws:cdk:path": "StorageStack/CDKMetadata/Default"
+   }
+  }
+ },
+ "Outputs": {
+  "TableName": {
+   "Value": {
+    "Ref": "SizeHistoryTableBD8CEEAE"
+   }
+  },
+  "ExportsOutputFnGetAttSizeHistoryTableBD8CEEAEArn064E59C0": {
+   "Value": {
+    "Fn::GetAtt": [
+     "SizeHistoryTableBD8CEEAE",
+     "Arn"
+    ]
+   },
+   "Export": {
+    "Name": "StorageStack:ExportsOutputFnGetAttSizeHistoryTableBD8CEEAEArn064E59C0"
+   }
+  },
+  "ExportsOutputRefSizeHistoryTableBD8CEEAE8F6003FE": {
+   "Value": {
+    "Ref": "SizeHistoryTableBD8CEEAE"
+   },
+   "Export": {
+    "Name": "StorageStack:ExportsOutputRefSizeHistoryTableBD8CEEAE8F6003FE"
+   }
+  }
+ },
+ "Parameters": {
+  "BootstrapVersion": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+  }
+ },
+ "Rules": {
+  "CheckBootstrapVersion": {
+   "Assertions": [
+    {
+     "Assert": {
+      "Fn::Not": [
+       {
+        "Fn::Contains": [
+         [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+         ],
+         {
+          "Ref": "BootstrapVersion"
+         }
+        ]
+       }
+      ]
+     },
+     "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,50 @@
+{
+  "/MidtermReplicatorStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/MidtermReplicatorStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/MidtermReplicatorStack/ReplicatorFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ReplicatorFunction7D3858AC"
+    }
+  ],
+  "/MidtermReplicatorStack/ReplicatorS3EventsRule/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ReplicatorS3EventsRule16B3D6BB"
+    }
+  ],
+  "/MidtermReplicatorStack/ReplicatorS3EventsRule/AllowEventRuleMidtermReplicatorStackReplicatorFunctionED189379": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ReplicatorS3EventsRuleAllowEventRuleMidtermReplicatorStackReplicatorFunctionED18937953825B6A"
+    }
+  ],
+  "/MidtermReplicatorStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/MidtermReplicatorStack/ReplicatorFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ReplicatorFunctionServiceRole6AA9B6DA"
+    }
+  ],
+  "/MidtermReplicatorStack/ReplicatorFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ReplicatorFunctionServiceRoleDefaultPolicyF3B4CA58"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "/DriverStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/DriverStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/DriverStack/DriverFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DriverFunction5A795A9A"
+    }
+  ],
+  "/DriverStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/DriverStack/DriverFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DriverFunctionServiceRole19170285"
+    }
+  ],
+  "/DriverStack/DriverFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DriverFunctionServiceRoleDefaultPolicy51C555A2"
+    }
+  ]
+}

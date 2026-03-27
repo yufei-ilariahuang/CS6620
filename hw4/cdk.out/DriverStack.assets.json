@@ -1,0 +1,36 @@
+{
+  "version": "52.0.0",
+  "files": {
+    "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73": {
+      "displayName": "DriverFunction/Code",
+      "source": {
+        "path": "asset.c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "389226936064-us-west-1-dbc83f82": {
+          "bucketName": "cdk-hnb659fds-assets-389226936064-us-west-1",
+          "objectKey": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip",
+          "region": "us-west-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-file-publishing-role-389226936064-us-west-1"
+        }
+      }
+    },
+    "2a86b7f7eab57224ce1a5d34de654c310c84d4f31497d6d9d16918a59db54e31": {
+      "displayName": "DriverStack Template",
+      "source": {
+        "path": "DriverStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "389226936064-us-west-1-f3352108": {
+          "bucketName": "cdk-hnb659fds-assets-389226936064-us-west-1",
+          "objectKey": "2a86b7f7eab57224ce1a5d34de654c310c84d4f31497d6d9d16918a59db54e31.json",
+          "region": "us-west-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-file-publishing-role-389226936064-us-west-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

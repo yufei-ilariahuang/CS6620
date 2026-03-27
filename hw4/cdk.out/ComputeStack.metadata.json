@@ -1,0 +1,302 @@
+{
+  "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/ComputeStack/BucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketName"
+    }
+  ],
+  "/ComputeStack/SNSTopicArn": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SNSTopicArn"
+    }
+  ],
+  "/ComputeStack/LogGroupName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LogGroupName"
+    }
+  ],
+  "/ComputeStack/PlottingFunctionUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctionUrl"
+    }
+  ],
+  "/ComputeStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/ComputeStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/ComputeStack/TestBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TestBucket560B80BC"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    }
+  ],
+  "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+  ],
+  "/ComputeStack/S3EventTopic/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "S3EventTopic5FF7B50F"
+    }
+  ],
+  "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+    }
+  ],
+  "/ComputeStack/SizeTrackingQueue/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingQueue7EE021D2"
+    }
+  ],
+  "/ComputeStack/LoggingQueue/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingQueue2008486F"
+    }
+  ],
+  "/ComputeStack/SizeTrackingFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingFunction966AA5C6"
+    }
+  ],
+  "/ComputeStack/LoggingFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingFunctionA358127A"
+    }
+  ],
+  "/ComputeStack/LoggingLogGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingLogGroup316D2CEA"
+    }
+  ],
+  "/ComputeStack/SizeMetricFilter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeMetricFilter57B403CA"
+    }
+  ],
+  "/ComputeStack/TotalSizeAlarm/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TotalSizeAlarm740865ED"
+    }
+  ],
+  "/ComputeStack/CleanerFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunction67FA5C5F"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctionA038CBF0"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/invoke-function-url": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctioninvokefunctionurlE68F5C7C"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/invoke-function": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctioninvokefunctionAC431197"
+    }
+  ],
+  "/ComputeStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/ComputeStack/Exports/Output{\"Fn::GetAtt\":[\"TestBucket560B80BC\",\"Arn\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttTestBucket560B80BCArnA29F078C"
+    }
+  ],
+  "/ComputeStack/Exports/Output{\"Ref\":\"TestBucket560B80BC\"}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputRefTestBucket560B80BC3F12F1DE"
+    }
+  ],
+  "/ComputeStack/Exports/Output{\"Fn::GetAtt\":[\"PlottingFunctionFunctionUrlB5CF25A8\",\"FunctionUrl\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttPlottingFunctionFunctionUrlB5CF25A8FunctionUrl9DAB3D21"
+    }
+  ],
+  "/ComputeStack/TestBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TestBucketPolicyBA12ED38"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/ComputeStack/TestBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TestBucketAutoDeleteObjectsCustomResource8FEAABD5"
+    }
+  ],
+  "/ComputeStack/TestBucket/Notifications/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TestBucketNotificationsE54C04C2"
+    }
+  ],
+  "/ComputeStack/S3EventTopic/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "S3EventTopicPolicyEC20EE32"
+    }
+  ],
+  "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+    }
+  ],
+  "/ComputeStack/SizeTrackingQueue/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingQueuePolicyFF78ED6E"
+    }
+  ],
+  "/ComputeStack/SizeTrackingQueue/ComputeStackS3EventTopicA852A6BB/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingQueueComputeStackS3EventTopicA852A6BB079C8067"
+    }
+  ],
+  "/ComputeStack/LoggingQueue/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingQueuePolicy511E6F5F"
+    }
+  ],
+  "/ComputeStack/LoggingQueue/ComputeStackS3EventTopicA852A6BB/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingQueueComputeStackS3EventTopicA852A6BB43E3DCC1"
+    }
+  ],
+  "/ComputeStack/SizeTrackingFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingFunctionServiceRoleEA41CF1C"
+    }
+  ],
+  "/ComputeStack/SizeTrackingFunction/SqsEventSource:ComputeStackSizeTrackingQueue6D09D017/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingFunctionSqsEventSourceComputeStackSizeTrackingQueue6D09D017D7836FE1"
+    }
+  ],
+  "/ComputeStack/LoggingFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingFunctionServiceRoleD5FDC44D"
+    }
+  ],
+  "/ComputeStack/LoggingFunction/SqsEventSource:ComputeStackLoggingQueueB4B8FB5B/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingFunctionSqsEventSourceComputeStackLoggingQueueB4B8FB5B49045A6B"
+    }
+  ],
+  "/ComputeStack/CleanerFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunctionServiceRole0677512D"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctionServiceRole1460557E"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/FunctionUrl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctionFunctionUrlB5CF25A8"
+    }
+  ],
+  "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+    }
+  ],
+  "/ComputeStack/SizeTrackingFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeTrackingFunctionServiceRoleDefaultPolicyC33E3A9F"
+    }
+  ],
+  "/ComputeStack/LoggingFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "LoggingFunctionServiceRoleDefaultPolicyAACC4E10"
+    }
+  ],
+  "/ComputeStack/CleanerFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CleanerFunctionServiceRoleDefaultPolicy8210BC79"
+    }
+  ],
+  "/ComputeStack/PlottingFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PlottingFunctionServiceRoleDefaultPolicy4ED9EF07"
+    }
+  ]
+}

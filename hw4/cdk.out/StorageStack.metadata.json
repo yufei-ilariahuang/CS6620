@@ -1,0 +1,44 @@
+{
+  "/StorageStack/TableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TableName"
+    }
+  ],
+  "/StorageStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/StorageStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/StorageStack/SizeHistoryTable/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SizeHistoryTableBD8CEEAE"
+    }
+  ],
+  "/StorageStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/StorageStack/Exports/Output{\"Fn::GetAtt\":[\"SizeHistoryTableBD8CEEAE\",\"Arn\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttSizeHistoryTableBD8CEEAEArn064E59C0"
+    }
+  ],
+  "/StorageStack/Exports/Output{\"Ref\":\"SizeHistoryTableBD8CEEAE\"}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputRefSizeHistoryTableBD8CEEAE8F6003FE"
+    }
+  ]
+}

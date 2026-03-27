@@ -1,0 +1,36 @@
+{
+  "version": "52.0.0",
+  "files": {
+    "7eca3bf067084cadf6310874d39727ca05bff1b39d1efaa5585adc3d55fe660e": {
+      "displayName": "CleanerFunction/Code",
+      "source": {
+        "path": "asset.7eca3bf067084cadf6310874d39727ca05bff1b39d1efaa5585adc3d55fe660e",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "389226936064-us-west-1-80928282": {
+          "bucketName": "cdk-mt6620-assets-389226936064-us-west-1",
+          "objectKey": "7eca3bf067084cadf6310874d39727ca05bff1b39d1efaa5585adc3d55fe660e.zip",
+          "region": "us-west-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-file-publishing-role-389226936064-us-west-1"
+        }
+      }
+    },
+    "1738e2176b3476c78363f25c6fa87d18760227c4f5742bf31e9df7482f225334": {
+      "displayName": "MidtermCleanerStack Template",
+      "source": {
+        "path": "MidtermCleanerStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "389226936064-us-west-1-91836677": {
+          "bucketName": "cdk-mt6620-assets-389226936064-us-west-1",
+          "objectKey": "1738e2176b3476c78363f25c6fa87d18760227c4f5742bf31e9df7482f225334.json",
+          "region": "us-west-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-file-publishing-role-389226936064-us-west-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

@@ -1,0 +1,182 @@
+{
+  "/MidtermStorageStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/MidtermStorageStack/SourceBucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SourceBucketName"
+    }
+  ],
+  "/MidtermStorageStack/DestinationBucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DestinationBucketName"
+    }
+  ],
+  "/MidtermStorageStack/TableName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "TableName"
+    }
+  ],
+  "/MidtermStorageStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/MidtermStorageStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/MidtermStorageStack/SourceBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SourceBucketDDD2130A"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/MidtermStorageStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    }
+  ],
+  "/MidtermStorageStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+  ],
+  "/MidtermStorageStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+    }
+  ],
+  "/MidtermStorageStack/DestinationBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DestinationBucket4BECDB47"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/MidtermStorageStack/ObjectCopyMapTable/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ObjectCopyMapTableA194ADBA"
+    }
+  ],
+  "/MidtermStorageStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Fn::GetAtt\":[\"SourceBucketDDD2130A\",\"Arn\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttSourceBucketDDD2130AArn02858302"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Fn::GetAtt\":[\"DestinationBucket4BECDB47\",\"Arn\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttDestinationBucket4BECDB47Arn6B889445"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Fn::GetAtt\":[\"ObjectCopyMapTableA194ADBA\",\"Arn\"]}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputFnGetAttObjectCopyMapTableA194ADBAArnB6563E5F"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Ref\":\"SourceBucketDDD2130A\"}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputRefSourceBucketDDD2130AFF6DDDA5"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Ref\":\"DestinationBucket4BECDB47\"}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputRefDestinationBucket4BECDB47A299B8F3"
+    }
+  ],
+  "/MidtermStorageStack/Exports/Output{\"Ref\":\"ObjectCopyMapTableA194ADBA\"}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ExportsOutputRefObjectCopyMapTableA194ADBA2D2438A0"
+    }
+  ],
+  "/MidtermStorageStack/SourceBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SourceBucketPolicy703DFBF9"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/MidtermStorageStack/SourceBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SourceBucketAutoDeleteObjectsCustomResourceC68FC040"
+    }
+  ],
+  "/MidtermStorageStack/SourceBucket/Notifications/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "SourceBucketNotifications0A6F2084"
+    }
+  ],
+  "/MidtermStorageStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+    }
+  ],
+  "/MidtermStorageStack/DestinationBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DestinationBucketPolicyFCD81088"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/MidtermStorageStack/DestinationBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DestinationBucketAutoDeleteObjectsCustomResource8ECA4428"
+    }
+  ],
+  "/MidtermStorageStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+    }
+  ]
+}
