@@ -48,7 +48,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/yXISw5AMBRA0bWYtw9lBxZAMJfXj6hPK/oaEbF3CaN7cgWIsoQswTNwpRe+Wgl3R6gWhmcY9OVw81rC3aNcDatG9+FhrQk+HupbdaQ90sOaiybv0gJyASKZg7X8iI7sZqD9+wKJNTOZbwAAAA=="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/yXISw5AMBRA0bWYtw9lBxZAMJfXj6hPK/oaEbF3CaN7cgWIMocswTNwpRe+Wgl3R6gWhmcY9OVw81rC3aNcDatG9+FhrQk+HupbdaQ90sOaiybv0gJyASKZg7X8iI7sZqD9+wIaET8cbwAAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "StorageStack/CDKMetadata/Default"
@@ -84,7 +84,7 @@
  "Parameters": {
   "BootstrapVersion": {
    "Type": "AWS::SSM::Parameter::Value<String>",
-   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Default": "/cdk-bootstrap/mt6620/version",
    "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
   }
  },

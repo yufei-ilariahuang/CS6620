@@ -166,7 +166,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "faa95a81ae7d7373f3e1f242268f904eb748d8d0fdd306e8a6fe515a1905a7d6.zip"
     },
     "Timeout": 900,
@@ -608,7 +608,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip"
     },
     "Environment": {
@@ -747,7 +747,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip"
     },
     "Environment": {
@@ -938,7 +938,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip"
     },
     "Environment": {
@@ -1098,7 +1098,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip"
     },
     "Environment": {
@@ -1188,7 +1188,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/5VRTU8DIRD9Le6ZonY9eav146KxdvVkTMPSsaVlYWUGqyH8dwNouyZevMy8x3vzAYz5+OyMnxyJHY7kcjvSquWhISG3TOxwEbDm4cLLLRCbvpqCnkPVqQ9lqvNqWJb8WPMsIS/WiSd7CRoI7tsNSMIqvrAizaxW8vPQtfB/9C4FDQmCDsyw9YVAiAwN8vBoeyXTkAJyPEwe0sa3KJ3qSVmTtCGPTImOh7nVkKScD10KigzfkIcHDz6bCsjxYB3QyLTo2qXg4dob+TN1j6/ewVBjvZNwJ/pemVWS/zj9qXhyOjm+0wxcpxDz7lgvBCIQ8klKTNsV8nBrVzfO+j659/gOyCl5rTSBS8KQRya19cudILnmYaKF65IlgxjZ1CPZbg6Yt8vPtMe/pJmz72oJLv0Syxs1JFbpKsPie0+9p8hmn7S25rjmp2M+PtqgUiPnDakO+LzkL7HbW0nDAgAA"
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/21R0XLCIBD8Ft/xWmN/QJ3alzpNTfvsIKHxKoGUAx2H4d87EDXpTF/Y3ds9OKCA4mkGjxN+pqmoj1OFewiV4+LI+Jl2geYQll4cpWOrL31lPZRGobgM5avuxZKTjIw0QfgwHYoU60leh96xrPyehMXOodHJG+vIkLcQtkbJZGUcdulZZPRDEN699DnUk7wO0ZGMTPF2X3MIa6/F7dQ7fz5J7SrjrZAb3nWom2T/U711fFqVElcopW2RKM9O8x0nko5gkYAp0xCEV9O8WOO7lL7zjXQWxRqVkzYZYx2ZUMbXZ+7EAcJCcdumSCYxspUnZ9qtpDxdfqY7/2OV1pywljb9EssTVY436Srj5jfvOu8iKy/uYPTDHGYFFJNvQpxarx22ErY9/gK2yJQbRgIAAA=="
    },
    "Metadata": {
     "aws:cdk:path": "ComputeStack/CDKMetadata/Default"
@@ -1253,7 +1253,7 @@
  "Parameters": {
   "BootstrapVersion": {
    "Type": "AWS::SSM::Parameter::Value<String>",
-   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Default": "/cdk-bootstrap/mt6620/version",
    "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
   }
  },

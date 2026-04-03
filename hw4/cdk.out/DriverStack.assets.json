@@ -8,26 +8,26 @@
         "packaging": "zip"
       },
       "destinations": {
-        "389226936064-us-west-1-dbc83f82": {
-          "bucketName": "cdk-hnb659fds-assets-389226936064-us-west-1",
+        "389226936064-us-west-1-efe0b022": {
+          "bucketName": "cdk-mt6620-assets-389226936064-us-west-1",
           "objectKey": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip",
           "region": "us-west-1",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-file-publishing-role-389226936064-us-west-1"
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-file-publishing-role-389226936064-us-west-1"
         }
       }
     },
-    "2a86b7f7eab57224ce1a5d34de654c310c84d4f31497d6d9d16918a59db54e31": {
+    "2efa3687723248e7444b25d3c5b6b9ffe633573fc1bbc03cb10c81754b0df450": {
       "displayName": "DriverStack Template",
       "source": {
         "path": "DriverStack.template.json",
         "packaging": "file"
       },
       "destinations": {
-        "389226936064-us-west-1-f3352108": {
-          "bucketName": "cdk-hnb659fds-assets-389226936064-us-west-1",
-          "objectKey": "2a86b7f7eab57224ce1a5d34de654c310c84d4f31497d6d9d16918a59db54e31.json",
+        "389226936064-us-west-1-6e24fbd5": {
+          "bucketName": "cdk-mt6620-assets-389226936064-us-west-1",
+          "objectKey": "2efa3687723248e7444b25d3c5b6b9ffe633573fc1bbc03cb10c81754b0df450.json",
           "region": "us-west-1",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-file-publishing-role-389226936064-us-west-1"
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-file-publishing-role-389226936064-us-west-1"
         }
       }
     }

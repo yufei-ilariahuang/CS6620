@@ -6,7 +6,7 @@
       "properties": {
         "file": "StorageStack.assets.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
       }
     },
     "StorageStack": {
@@ -16,24 +16,67 @@
         "templateFile": "StorageStack.template.json",
         "terminationProtection": false,
         "validateOnSynth": false,
-        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-deploy-role-389226936064-us-west-1",
-        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-cfn-exec-role-389226936064-us-west-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-389226936064-us-west-1/05ceeb64215b1302df8f216f66f708c72e0c64e6f2921f6969b37b890b1f34a8.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-deploy-role-389226936064-us-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-cfn-exec-role-389226936064-us-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-mt6620-assets-389226936064-us-west-1/4ad90222e30cc44a9ca362fe55ef229cf2895dcb1cc91711ef5e3855a549c4a3.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version",
         "additionalDependencies": [
           "StorageStack.assets"
         ],
         "lookupRole": {
-          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-lookup-role-389226936064-us-west-1",
+          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-lookup-role-389226936064-us-west-1",
           "requiresBootstrapStackVersion": 8,
-          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
         }
       },
       "dependencies": [
         "StorageStack.assets"
       ],
-      "additionalMetadataFile": "StorageStack.metadata.json",
+      "metadata": {
+        "/StorageStack/SizeHistoryTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeHistoryTableBD8CEEAE"
+          }
+        ],
+        "/StorageStack/TableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableName"
+          }
+        ],
+        "/StorageStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/StorageStack/Exports/Output{\"Fn::GetAtt\":[\"SizeHistoryTableBD8CEEAE\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttSizeHistoryTableBD8CEEAEArn064E59C0"
+          }
+        ],
+        "/StorageStack/Exports/Output{\"Ref\":\"SizeHistoryTableBD8CEEAE\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefSizeHistoryTableBD8CEEAE8F6003FE"
+          }
+        ],
+        "/StorageStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/StorageStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
       "displayName": "StorageStack"
     },
     "ComputeStack.assets": {
@@ -41,7 +84,7 @@
       "properties": {
         "file": "ComputeStack.assets.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
       }
     },
     "ComputeStack": {
@@ -51,25 +94,314 @@
         "templateFile": "ComputeStack.template.json",
         "terminationProtection": false,
         "validateOnSynth": false,
-        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-deploy-role-389226936064-us-west-1",
-        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-cfn-exec-role-389226936064-us-west-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-389226936064-us-west-1/2f714abaeccb3f45e37c5cd395db0374fb7b46c4f8f324c67fdc67b371ab8ba6.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-deploy-role-389226936064-us-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-cfn-exec-role-389226936064-us-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-mt6620-assets-389226936064-us-west-1/f496c54a51661328175742a4b224c0f06041bce0fea7c61d0050ae79f09b79f3.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version",
         "additionalDependencies": [
           "ComputeStack.assets"
         ],
         "lookupRole": {
-          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-lookup-role-389226936064-us-west-1",
+          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-lookup-role-389226936064-us-west-1",
           "requiresBootstrapStackVersion": 8,
-          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
         }
       },
       "dependencies": [
         "StorageStack",
         "ComputeStack.assets"
       ],
-      "additionalMetadataFile": "ComputeStack.metadata.json",
+      "metadata": {
+        "/ComputeStack/TestBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TestBucket560B80BC"
+          }
+        ],
+        "/ComputeStack/TestBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TestBucketPolicyBA12ED38"
+          }
+        ],
+        "/ComputeStack/TestBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TestBucketAutoDeleteObjectsCustomResource8FEAABD5"
+          }
+        ],
+        "/ComputeStack/TestBucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TestBucketNotificationsE54C04C2"
+          }
+        ],
+        "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/ComputeStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/ComputeStack/S3EventTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3EventTopic5FF7B50F"
+          }
+        ],
+        "/ComputeStack/S3EventTopic/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "S3EventTopicPolicyEC20EE32"
+          }
+        ],
+        "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/ComputeStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/ComputeStack/SizeTrackingQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingQueue7EE021D2"
+          }
+        ],
+        "/ComputeStack/SizeTrackingQueue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingQueuePolicyFF78ED6E"
+          }
+        ],
+        "/ComputeStack/SizeTrackingQueue/ComputeStackS3EventTopicA852A6BB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingQueueComputeStackS3EventTopicA852A6BB079C8067"
+          }
+        ],
+        "/ComputeStack/LoggingQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingQueue2008486F"
+          }
+        ],
+        "/ComputeStack/LoggingQueue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingQueuePolicy511E6F5F"
+          }
+        ],
+        "/ComputeStack/LoggingQueue/ComputeStackS3EventTopicA852A6BB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingQueueComputeStackS3EventTopicA852A6BB43E3DCC1"
+          }
+        ],
+        "/ComputeStack/SizeTrackingFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingFunctionServiceRoleEA41CF1C"
+          }
+        ],
+        "/ComputeStack/SizeTrackingFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingFunctionServiceRoleDefaultPolicyC33E3A9F"
+          }
+        ],
+        "/ComputeStack/SizeTrackingFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingFunction966AA5C6"
+          }
+        ],
+        "/ComputeStack/SizeTrackingFunction/SqsEventSource:ComputeStackSizeTrackingQueue6D09D017/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeTrackingFunctionSqsEventSourceComputeStackSizeTrackingQueue6D09D017D7836FE1"
+          }
+        ],
+        "/ComputeStack/LoggingFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingFunctionServiceRoleD5FDC44D"
+          }
+        ],
+        "/ComputeStack/LoggingFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingFunctionServiceRoleDefaultPolicyAACC4E10"
+          }
+        ],
+        "/ComputeStack/LoggingFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingFunctionA358127A"
+          }
+        ],
+        "/ComputeStack/LoggingFunction/SqsEventSource:ComputeStackLoggingQueueB4B8FB5B/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingFunctionSqsEventSourceComputeStackLoggingQueueB4B8FB5B49045A6B"
+          }
+        ],
+        "/ComputeStack/LoggingLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LoggingLogGroup316D2CEA"
+          }
+        ],
+        "/ComputeStack/SizeMetricFilter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SizeMetricFilter57B403CA"
+          }
+        ],
+        "/ComputeStack/TotalSizeAlarm/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TotalSizeAlarm740865ED"
+          }
+        ],
+        "/ComputeStack/CleanerFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CleanerFunctionServiceRole0677512D"
+          }
+        ],
+        "/ComputeStack/CleanerFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CleanerFunctionServiceRoleDefaultPolicy8210BC79"
+          }
+        ],
+        "/ComputeStack/CleanerFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CleanerFunction67FA5C5F"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctionServiceRole1460557E"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctionServiceRoleDefaultPolicy4ED9EF07"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctionA038CBF0"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/FunctionUrl/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctionFunctionUrlB5CF25A8"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/invoke-function-url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctioninvokefunctionurlE68F5C7C"
+          }
+        ],
+        "/ComputeStack/PlottingFunction/invoke-function": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctioninvokefunctionAC431197"
+          }
+        ],
+        "/ComputeStack/BucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketName"
+          }
+        ],
+        "/ComputeStack/SNSTopicArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SNSTopicArn"
+          }
+        ],
+        "/ComputeStack/LogGroupName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogGroupName"
+          }
+        ],
+        "/ComputeStack/PlottingFunctionUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PlottingFunctionUrl"
+          }
+        ],
+        "/ComputeStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/ComputeStack/Exports/Output{\"Fn::GetAtt\":[\"TestBucket560B80BC\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttTestBucket560B80BCArnA29F078C"
+          }
+        ],
+        "/ComputeStack/Exports/Output{\"Ref\":\"TestBucket560B80BC\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefTestBucket560B80BC3F12F1DE"
+          }
+        ],
+        "/ComputeStack/Exports/Output{\"Fn::GetAtt\":[\"PlottingFunctionFunctionUrlB5CF25A8\",\"FunctionUrl\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttPlottingFunctionFunctionUrlB5CF25A8FunctionUrl9DAB3D21"
+          }
+        ],
+        "/ComputeStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/ComputeStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
       "displayName": "ComputeStack"
     },
     "DriverStack.assets": {
@@ -77,7 +409,7 @@
       "properties": {
         "file": "DriverStack.assets.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
       }
     },
     "DriverStack": {
@@ -87,25 +419,62 @@
         "templateFile": "DriverStack.template.json",
         "terminationProtection": false,
         "validateOnSynth": false,
-        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-deploy-role-389226936064-us-west-1",
-        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-cfn-exec-role-389226936064-us-west-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-389226936064-us-west-1/2a86b7f7eab57224ce1a5d34de654c310c84d4f31497d6d9d16918a59db54e31.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-deploy-role-389226936064-us-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-cfn-exec-role-389226936064-us-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-mt6620-assets-389226936064-us-west-1/2efa3687723248e7444b25d3c5b6b9ffe633573fc1bbc03cb10c81754b0df450.json",
         "requiresBootstrapStackVersion": 6,
-        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version",
         "additionalDependencies": [
           "DriverStack.assets"
         ],
         "lookupRole": {
-          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-hnb659fds-lookup-role-389226936064-us-west-1",
+          "arn": "arn:${AWS::Partition}:iam::389226936064:role/cdk-mt6620-lookup-role-389226936064-us-west-1",
           "requiresBootstrapStackVersion": 8,
-          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/mt6620/version"
         }
       },
       "dependencies": [
         "ComputeStack",
         "DriverStack.assets"
       ],
-      "additionalMetadataFile": "DriverStack.metadata.json",
+      "metadata": {
+        "/DriverStack/DriverFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DriverFunctionServiceRole19170285"
+          }
+        ],
+        "/DriverStack/DriverFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DriverFunctionServiceRoleDefaultPolicy51C555A2"
+          }
+        ],
+        "/DriverStack/DriverFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DriverFunction5A795A9A"
+          }
+        ],
+        "/DriverStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DriverStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DriverStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
       "displayName": "DriverStack"
     },
     "Tree": {

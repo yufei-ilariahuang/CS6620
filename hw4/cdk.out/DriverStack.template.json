@@ -88,7 +88,7 @@
    "Type": "AWS::Lambda::Function",
    "Properties": {
     "Code": {
-     "S3Bucket": "cdk-hnb659fds-assets-389226936064-us-west-1",
+     "S3Bucket": "cdk-mt6620-assets-389226936064-us-west-1",
      "S3Key": "c4d300a07efdb889f3d942ab236ede43b609d4c0567bef108fd3d8ac0235ec73.zip"
     },
     "Environment": {
@@ -126,7 +126,7 @@
   "CDKMetadata": {
    "Type": "AWS::CDK::Metadata",
    "Properties": {
-    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWISw6CMBBAz8K+jFq4gJi4JnAAMpSKI6VNnCGENL27AeLqfTTosoRrhivnZphyRz3EVtBMClfuosO5HxDic/FGKHj1ePm/J0U4Q2yCs/s+WAdHZtvztKS46JDZCsN9h+ICqsVMVipkm9QxW8GR/JhUvck7+EsBNw06+zBR/l280GyhOfkDBiiLJrEAAAA="
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/zWISw6CMBBAz8J+GKV4ATFxTeAAZCgVR0qbOCWENL27AeLqfRSqW4HXjFbJ9TDllnuMbSA9Aa3SRUtzPxDG5+J0YO/g8XJ/T8A0Y2y8Nfs+WHvLetvztARSdiRiguB9B0iJ1aInEyoSk+CYbaCR3Zig3sLbu0uJhUKVfYQ5/y4u8GywOfkDT4e4MbEAAAA="
    },
    "Metadata": {
     "aws:cdk:path": "DriverStack/CDKMetadata/Default"
@@ -136,7 +136,7 @@
  "Parameters": {
   "BootstrapVersion": {
    "Type": "AWS::SSM::Parameter::Value<String>",
-   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Default": "/cdk-bootstrap/mt6620/version",
    "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
   }
  },
